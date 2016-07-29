@@ -1,6 +1,0 @@
-The Specialisation - https://www.coursera.org/specializations/full-stack
-
-The courses:
-https://dzone.com/articles/node-grunt-bower-and-yeoman
-https://www.coursera.org/learn/web-frameworks
-https://www.coursera.org/learn/server-side-development
