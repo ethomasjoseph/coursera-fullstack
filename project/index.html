@@ -10,7 +10,7 @@
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/bootstrap-social.css" rel="stylesheet">
-<!--    <link href="css/debug.css" rel="stylesheet">-->
+    <!--    <link href="css/debug.css" rel="stylesheet">-->
     <link href="css/custom.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -55,8 +55,9 @@
                     <li><a href="contactus.html"><span class="fa fa-envelope-o" aria-hidden="true"></span> Contact</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a data-toggle="modal" data-target="#loginModal">
-                    <span class="glyphicon glyphicon-log-in"></span> Login</a>
+                    <li>
+                        <a data-toggle="modal" data-target="#loginModal">
+                            <span class="glyphicon glyphicon-log-in"></span> Login</a>
                     </li>
                 </ul>
             </div>
@@ -71,12 +72,12 @@
                 </div>
                 <div class="modal-body">
                     <form class="form-inline" role="login">
-                      <div class="form-group">
-                          <input type="text" class="form-control" placeholder="Email" label="Email" autocomplete="off">
-                          <input type="password" class="form-control" placeholder="Password" label="Password">
-                          <input type="checkbox" class="form-control left" label="Remember Me" name="rememberme" id="rememberme">
-                          <label class="control-label label" for="rememberme">Remember Me</label>
-                      </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Email" label="Email" autocomplete="off">
+                            <input type="password" class="form-control" placeholder="Password" label="Password">
+                            <input type="checkbox" class="form-control left" label="Remember Me" name="rememberme" id="rememberme">
+                            <label class="control-label label" for="rememberme">Remember Me</label>
+                        </div>
                         <button type="submit" class="btn btn-info">Sign In</button>
                         <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
                     </form>
@@ -110,8 +111,60 @@
         <div class="row">
             <div class="col-xs-12">
                 <ol class="breadcrumb">
-                  <li class="active">Home</li>
+                    <li class="active">Home</li>
                 </ol>
+            </div>
+        </div>
+        <div class="row row-content">
+            <div class="col-xs-12">
+                <div id="bannerCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#bannerCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#bannerCarousel" data-slide-to="1"></li>
+                        <li data-target="#bannerCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Wrapper for Slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="img/uthappizza.png" alt="Uthapizza" class="fixture-left media-object">
+                            <img src="img/buffet.png" alt="Uthapizza" class="stretch">
+                            <div class="carousel-caption">
+                                <h2 class="media-heading">Uthappizza <span class="label label-danger">Hot</span> <span class="badge">$4.99</span></h2>
+                                <p class="text-shadow">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                                <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/buffet.png" alt="Buffet" class="fixture-left media-object">
+                            <img src="img/buffet.png" alt="Buffet" class="stretch">
+                            <div class="carousel-caption">
+                                <h2 class="media-heading">Weekend Grand Buffet <span class="label label-danger">New</span></h2>
+                                <p class="text-shadow">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                                <p><a href="#" class="btn btn-primary btn-xs">More &raquo;</a></p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="img/alberto.png" alt="Alberto" class="fixture-left media-object">
+                            <img src="img/buffet.png" alt="Alberto" class="stretch">
+                            <div class="carousel-caption">
+                                <h2 class="media-heading">Alberto Somayya</h2>
+                                <h4>Executive Chef</h4>
+                                <p class="text-shadow">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                                <p><a class="btn btn-primary btn-xs" href="#">More &raquo;</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#bannerCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#bannerCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
             </div>
         </div>
         <div class="row row-content">
@@ -123,8 +176,7 @@
                 <div class="media">
                     <div class="media-left media-middle">
                         <a href="#">
-                        <img class="media-object img-thumbnail img-circle"
-                         src="img/uthappizza.png" alt="Uthappizza">
+                            <img class="media-object img-thumbnail img-circle" src="img/uthappizza.png" alt="Uthappizza">
                         </a>
                     </div>
                     <div class="media-body">
@@ -151,8 +203,7 @@
                     </div>
                     <div class="media-right media-middle">
                         <a href="#">
-                        <img class="media-object img-thumbnail img-circle"
-                         src="img/buffet.png" alt="Buffet">
+                            <img class="media-object img-thumbnail img-circle" src="img/buffet.png" alt="Buffet">
                         </a>
                     </div>
                 </div>
@@ -169,8 +220,7 @@
                 <div class="media">
                     <div class="media-left media-middle">
                         <a href="#">
-                        <img class="media-object img-thumbnail"
-                         src="img/alberto.png" alt="Alberto Somayya">
+                            <img class="media-object img-thumbnail" src="img/alberto.png" alt="Alberto Somayya">
                         </a>
                     </div>
                     <div class="media-body">
@@ -182,14 +232,14 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="row row-content">
             <div class="col-xs-12 col-sm-3">
                 <a name="reserve"></a>
                 <p style="padding:20px;"></p>
                 <h3 align=center>Reserve a Table</h3>
             </div>
-            
+
             <div class="col-xs-12 col-sm-9">
                 <form class="form-horizontal" role="form">
                     <div class="row">
@@ -198,22 +248,28 @@
                         </div>
                         <div class="col-sm-10">
                             <div class="radio-inline">
-                                <label><input type="radio" id="one" name="noofguest" />1</label>
+                                <label>
+                                    <input type="radio" id="one" name="noofguest" />1</label>
                             </div>
                             <div class="radio-inline">
-                                <label><input type="radio" id="two" name="noofguest" />2</label>
+                                <label>
+                                    <input type="radio" id="two" name="noofguest" />2</label>
                             </div>
                             <div class="radio-inline">
-                                <label><input type="radio" id="three" name="noofguest" />3</label>
+                                <label>
+                                    <input type="radio" id="three" name="noofguest" />3</label>
                             </div>
                             <div class="radio-inline">
-                                <label><input type="radio" id="four" name="noofguest" />4</label>
+                                <label>
+                                    <input type="radio" id="four" name="noofguest" />4</label>
                             </div>
                             <div class="radio-inline">
-                                <label><input type="radio" id="five" name="noofguest" />5</label>
+                                <label>
+                                    <input type="radio" id="five" name="noofguest" />5</label>
                             </div>
                             <div class="radio-inline">
-                                <label><input type="radio" id="siz" name="noofguest" />6</label>
+                                <label>
+                                    <input type="radio" id="siz" name="noofguest" />6</label>
                             </div>
                         </div>
                     </div>
@@ -223,31 +279,31 @@
                         </div>
                         <div class="col-sm-3">
                             <div class="form-group" style="padding-left:15px;">
-                              <input type="date" class="form-control" id="reservationDate" aria-describedby="inputDate" placeholder="Date">
-                              <span class="glyphicon glyphicon-calendar form-control-feedback"></span>
-                              <span id="inputDate" class="sr-only">(Date)</span>
+                                <input type="date" class="form-control" id="reservationDate" aria-describedby="inputDate" placeholder="Date">
+                                <span class="glyphicon glyphicon-calendar form-control-feedback"></span>
+                                <span id="inputDate" class="sr-only">(Date)</span>
                             </div>
                         </div>
                         <div class="col-sm-3 col-sm-push-2">
-                            <div class="form-group"  style="padding-left:15px;">
-                              <input type="time" class="form-control" id="reservationTime" aria-describedby="inputTime" placeholder="Time">
-                              <span class="glyphicon glyphicon-time form-control-feedback"></span>
-                              <span id="inputTime" class="sr-only">(Time)</span>
+                            <div class="form-group" style="padding-left:15px;">
+                                <input type="time" class="form-control" id="reservationTime" aria-describedby="inputTime" placeholder="Time">
+                                <span class="glyphicon glyphicon-time form-control-feedback"></span>
+                                <span id="inputTime" class="sr-only">(Time)</span>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-2 col-sm-push-2">
-                            <input type="submit" class="btn btn-primary" value="Reserve"/>
+                            <input type="submit" class="btn btn-primary" value="Reserve" />
                         </div>
                     </div>
                 </form>
             </div>
             <div class="col-xs-12 col-sm-9 col-sm-push-3">
-                 <p style="padding:10px;"></p>
+                <p style="padding:10px;"></p>
                 <div class="alert alert-warning alert-dismissible" role="alert">
-                  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <strong>Warning!</strong> Please <strong>call</strong> us to reserve more that six guests.
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <strong>Warning!</strong> Please <strong>call</strong> us to reserve more that six guests.
                 </div>
             </div>
         </div>
@@ -278,7 +334,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-4">
                     <div style="padding: 40px 10px;">
-                        <a class="btn btn-social-icon btn-google-plus"  href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+                        <a class="btn btn-social-icon btn-google-plus" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
                         <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
                         <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
                         <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>

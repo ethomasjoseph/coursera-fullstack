@@ -93,3 +93,28 @@ body{
 .affix {
     top:60px;
 }
+.carousel {
+    background:#1A237E;
+}
+.carousel .item {
+  height: 300px;
+}
+.item img.stretch {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+.item img.fixture-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+    z-index: 10;
+}
+
+.carousel-caption .text-shadow {
+    text-shadow: 1px 1px 3px black;
+}
