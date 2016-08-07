@@ -56,14 +56,14 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a data-toggle="modal" data-target="#loginModal">
+                        <a id="login-btn">
                             <span class="glyphicon glyphicon-log-in"></span> Login</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div id="loginModal" class="modal fade" role="dialog">
+    <div id="login-modal" class="modal fade" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -85,10 +85,11 @@
             </div>
         </div>
     </div>
-    <div id="reserveModal" class="modal fade" role="dialog">
+    <div id="reserve-modal" class="modal fade" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">Reserve a Table</h4>
                 </div>
                 <div class="modal-body">
@@ -194,7 +195,7 @@
                     <img src="img/logo.png" class="img-responsive">
                 </div>
                 <div class="col-xs-12 col-sm-2 jumbotron-vertical-center">
-                    <a class="btn btn-warning" title="Or Call us at +852 12345678" data-toggle="modal" data-target="#reserveModal">Reserve Table</a>
+                    <a class="btn btn-warning" title="Or Call us at +852 12345678" id="reserve-btn">Reserve Table</a>
                 </div>
             </div>
         </div>
