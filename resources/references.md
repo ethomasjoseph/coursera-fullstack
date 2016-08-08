@@ -3,7 +3,7 @@
 ## Responsive Design
 * [The Subtle Magic Behind Why the Bootstrap 3 Grid Works](http://www.helloerik.com/the-subtle-magic-behind-why-the-bootstrap-3-grid-works) (a detailed explanation of why the Bootstrap grid system works the way it does, a delight to read!)
 * [What The Heck Is Responsive Web Design?](http://johnpolacek.github.io/scrolldeck.js/decks/responsive/) (a short presentation that introduces responsive web design)
-* [The 2014 Guide to Responsive Web Design](http://blog.teamtreehouse.com/modern-field-guide-responsive-web-design)http://johnpolacek.github.io/scrolldeck.js/decks/responsive/ (an updated guide to responsive design)
+* [The 2014 Guide to Responsive Web Design](http://blog.teamtreehouse.com/modern-field-guide-responsive-web-design) (an updated guide to responsive design)
 
 
 ## Icon Fonts
