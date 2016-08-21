@@ -12,7 +12,8 @@ I am greately influenced by the Coursera's full stack [specialization](https://w
 
 1. Overview the environment and tools - [https://dzone.com/articles/node-grunt-bower-and-yeoman](https://dzone.com/articles/node-grunt-bower-and-yeoman)
 2. Webframeworks with focus on Bootstrap - [https://www.coursera.org/learn/web-frameworks](https://www.coursera.org/learn/web-frameworks)
-3. Server Side development with NodeJS - [https://www.coursera.org/learn/server-side-development](https://www.coursera.org/learn/server-side-development)
+3. Web Tools: Grunt and Gulp - Week 2 of Coursera's [Front-End JavaScript Frameworks: AngularJS](https://www.coursera.org/learn/angular-js)  (I have skipped the main topic of AngularJS since I plan to directly learn Angular 2, and I am focusing on the Grunt and Gulp topics here).
+4. Server Side development with NodeJS - [https://www.coursera.org/learn/server-side-development](https://www.coursera.org/learn/server-side-development)
 
 
 I will consistently update the learning path, as and when I will find more and interesting topics to my learning objectives.
