@@ -1,0 +1,156 @@
+////////////////////////
+// CUSTOM STYLES /////
+///////////////////////
+
+@white: #ffffff;
+@off-white: #eeeeee;
+@lt-gray: #dddddd;
+@indigo: #303f9f;
+@dark-indigo: #1a237e;
+@light-indigo: #7986CB;
+
+// Height variables
+@carousel-height: 300px;
+
+.zero-margin (@pad-up-dn: 0px, @pad-left-right: 0px) {
+	margin:0px auto;
+	padding: @pad-up-dn @pad-left-right;
+}
+
+.row-header {
+	.zero-margin();
+}
+.row-content {
+	.zero-margin (50px, 0px);
+	border-bottom: 1px ridge;
+	min-height:400px;
+}
+.row-footer {
+	.zero-margin(20px, 0px);
+	background-color: #AfAfAf;
+}
+.jumbotron {
+	.zero-margin(70px, 30px);
+	background:@light-indigo;
+	color:floralwhite;
+}
+
+.carousel {
+	background:@dark-indigo;
+	.item {
+		height: @carousel-height;
+		img {
+			left: 0;
+			min-height: @carousel-height;
+			position: absolute;
+			top: 0;
+		}
+	}
+}
+.navbar-inverse {
+	background: @indigo;
+	color:@white;
+	.navbar-nav>.active>a {
+		background: @dark-indigo;
+		color: @white;
+		&:hover {
+			background: @dark-indigo;
+			color: @white;
+		}
+		&:focus {
+			background: @dark-indigo;
+			color: @white;
+		}
+	}
+	.navbar-nav>.open>a {
+		background: @dark-indigo;
+		color: @white;
+		&:hover {
+			background: @dark-indigo;
+			color: @white;
+		}
+		&:focus {
+			background: @dark-indigo;
+			color: @white;
+		}
+	}
+	.navbar-nav {
+		.open {
+			.dropdown-menu>li>a {
+				background-color: @indigo;
+				color:@off-white;
+				&:hover {
+					color:#000000;
+				}
+			}
+			.dropdown-menu {
+				background-color: @indigo;
+				color:@off-white;
+			}
+		}
+	}
+}
+
+// remaining classes
+address{
+    font-size:80%;
+    margin:0px;
+    color:#0f0f0f;
+}
+
+// menu changes
+body{
+    padding:50px 0px 0px 0px;
+    z-index:0;
+}
+.navbar-login {
+    margin-top: 4px !important;
+    margin-bottom: 4px !important;
+    padding-top: 3px;
+}
+
+.jumbotron-vertical-center {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.tab-content .tab-pane {
+    border-left : 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+.affix {
+    top:60px;
+}
+.carousel {
+    background:#1A237E;
+}
+.carousel .item {
+  height: 300px;
+}
+.item img.stretch {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+.item img.fixture-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 300px;
+    z-index: 10;
+}
+
+.carousel-caption .text-shadow {
+    text-shadow: 1px 1px 3px black;
+}
+
+#carouselButtons {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}

@@ -23,3 +23,7 @@
 * [Bower 101](https://medium.com/@ZaidHanania/bower-101-c0b57322df8)
 
 
+## NodeJS
+* [NodeJS best practices - Heroku](https://devcenter.heroku.com/articles/node-best-practices)
+* [NPM JS Documentation on package.json handling](https://docs.npmjs.com/files/package.json)
+* [NPM JS Documentation on npm config files (npmrc) ](https://docs.npmjs.com/files/npmrc)
