@@ -109,13 +109,48 @@ module.exports = function(grunt) {
                     dest: 'dist'
                 }]
             }
+        },
+        connect: {
+            options: {
+                port: 9000,
+                // Change this to '0.0.0.0' to access the server from outside.
+                hostname: 'localhost',
+                livereload: 35729
+            },
+            dist: {
+                options: {
+                    open: true,
+                    base: {
+                        path: 'dist',
+                        options: {
+                            index: 'index.html',
+                            maxAge: 300000
+                        }
+                    }
+                }
+            }
+        },
+        watch: {
+            livereload: {
+                options: {
+                    livereload: '<%= connect.options.livereload %>'
+                },
+                files: [
+                    'src/{,*/}*.html',
+                    '.src/css/{,*/}*.css',
+                    'src/img/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
+                ],
+                tasks: ['jshint', 'less', 'concat', 'concat_css', 'copy']
+            }
         }
     });
-    
+
     grunt.loadNpmTasks('grunt-concat-css');
 
     // Register Tasks
     grunt.registerTask('build', ['clean', 'jshint', 'less', 'concat', 'concat_css', 'copy']);
+
+    grunt.registerTask('serve', ['build', 'connect:dist', 'watch']);
 
     grunt.registerTask('default', ['build']);
 
