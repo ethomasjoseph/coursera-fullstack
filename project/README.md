@@ -22,3 +22,5 @@ Before building and using this application, there are a few standard pre-requisi
 3. `grunt`
 
 This will result in a distribution folder `dist`, which will contain the distributable project files.
+
+*Note*: To auto reload the development changes, issue the command `grunt serve`.
