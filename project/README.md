@@ -24,3 +24,7 @@ Before building and using this application, there are a few standard pre-requisi
 This will result in a distribution folder `dist`, which will contain the distributable project files.
 
 *Note*: To auto reload the development changes, issue the command `grunt serve`.
+
+## Development Notes
+
+* At times the fonts may not display properly, and instead show as squares (especially the fontawesome fonts). This is because we are using the css directly, which makes the some font declaration away from the beginning of the css files. Ideally the css should be broken into smaller units (or else as `less` or `sass` files compiled into css), and combined such that font declarations appear at the beginning.

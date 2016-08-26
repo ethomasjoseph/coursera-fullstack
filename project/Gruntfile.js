@@ -5,7 +5,9 @@ module.exports = function(grunt) {
     require('time-grunt')(grunt);
 
     // A JIT(Just In Time) plugin loader for Grunt
-    require('jit-grunt')(grunt);
+    require('jit-grunt')(grunt, {
+        useminPrepare: 'grunt-usemin'
+    });
 
     // Project configuration.
     grunt.initConfig({
@@ -34,34 +36,19 @@ module.exports = function(grunt) {
                 }
             },
         },
+        useminPrepare: {
+            html: 'src/index.html',
+            options: {
+                dest: 'dist'
+            }
+        },
         // Concat
         concat: {
             options: {
-                separator: ';',
-                stripBanners: false
+                separator: ';'
             },
-            customscripts: {
-                src: ['src/js/*.js'],
-                dest: 'tmp/js/main.js'
-            },
-            vendorscripts: {
-                src: ['lib/bootstrap/dist/js/bootstrap.js'],
-                dest: 'tmp/js/vendor.js'
-            }
-        },
-        concat_css: {
-            customcss: {
-                src: ['tmp/less-compiled/*.css', 'src/css/*.css', '!src/css/debug*.css'],
-                dest: 'tmp/css/main.css'
-            },
-            debugcss: {
-                src: ['src/css/debug*.css'],
-                dest: 'tmp/css/debug.css'
-            },
-            vendorcss: {
-                src: ['lib/bootstrap/dist/css/bootstrap.css', 'lib/font-awesome/css/font-awesome.css'],
-                dest: 'tmp/css/vendor.css'
-            }
+            // dist configuration is provided by useminPrepare
+            dist: {}
         },
         // Uglify
         uglify: {
@@ -69,6 +56,17 @@ module.exports = function(grunt) {
         },
         cssmin: {
             dist: {}
+        },
+        // Usemin
+        // Replaces all assets with their revved version in html and css files.
+        // options.assetDirs contains the directories for finding the assets
+        // according to their relative paths
+        usemin: {
+            html: ['dist/*.html'],
+            css: ['dist/css/*.css'],
+            options: {
+                assetsDirs: ['dist', 'dist/css']
+            }
         },
         // now copy everything from tmp to dist
         copy: {
@@ -148,7 +146,17 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-concat-css');
 
     // Register Tasks
-    grunt.registerTask('build', ['clean', 'jshint', 'less', 'concat', 'concat_css', 'copy']);
+    grunt.registerTask('build', [
+        'clean',
+        'jshint',
+        'less',
+        'useminPrepare',
+        'concat',
+        'cssmin',
+        'uglify',
+        'copy',
+        'usemin'
+    ]);
 
     grunt.registerTask('serve', ['build', 'connect:dist', 'watch']);
 
