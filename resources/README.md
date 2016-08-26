@@ -1,3 +1,6 @@
+# Resources
+This section lists some of the resources that can be referenced towards the larger theme of being a "full stack developer".
+
 # Additional References
 
 ## Responsive Design
@@ -27,3 +30,7 @@
 * [NodeJS best practices - Heroku](https://devcenter.heroku.com/articles/node-best-practices)
 * [NPM JS Documentation on package.json handling](https://docs.npmjs.com/files/package.json)
 * [NPM JS Documentation on npm config files (npmrc) ](https://docs.npmjs.com/files/npmrc)
+
+
+## Task Runners
+* [Gulp vs Grunt](https://medium.com/@preslavrachev/gulp-vs-grunt-why-one-why-the-other-f5d3b398edc4)
